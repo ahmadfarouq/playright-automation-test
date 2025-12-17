@@ -1,0 +1,23 @@
+{
+  "name": "playright-automation-test",
+  "version": "1.0.0",
+  "description": "simple automation script for technical test",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmadfarouq/playright-automation-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ahmadfarouq/playright-automation-test/issues"
+  },
+  "homepage": "https://github.com/ahmadfarouq/playright-automation-test#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.2"
+  }
+}
