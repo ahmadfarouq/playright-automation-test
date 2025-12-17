@@ -27,8 +27,8 @@ npm -v
 ## Setup
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/ahmadfarouq/playright-automation-test.git
+cd playright-automation-test
 ``` 
 2. Install dependencies:
 ```bash
