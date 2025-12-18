@@ -56,9 +56,17 @@ To run tests in a specific browser (chromium, firefox, webkit):
 npx playwright test --project=chromium
 ```
 ## Test Reports
-After running tests, generate an HTML report with:
+Playwright generates an HTML report after execution.
+
+### Report location(generated after running tests)
 ```bash
-npx playwright show-report
+./playwright-report/index.html
+```
+### View the report locally
+After running the tests, execute:
+```bash
+npx playwright show-report 
+
 ```
 This will open the report in your default web browser. 
 
@@ -80,7 +88,30 @@ This will open the report in your default web browser.
 ├── playwright.config.ts                   # Playwright configuration file
 ├── package.json                           # npm package file
 ├── tsconfig.json                          # TypeScript configuration file
+
 ``` 
+## GitHub Actions (CI Pipeline)
+
+This project includes a GitHub Actions workflow that runs Playwright tests automatically.
+
+### When it runs
+- Automatically on **push to `main`**
+- Manually via **Actions → Playwright Test Automation → Run workflow**
+
+### How to view pipeline runs
+1. Go to your repository in GitHub
+2. Click the **Actions** tab
+3. Select **Playwright Test Automation**
+4. Click the latest workflow run to view logs and step status
+
+### How to download and view the Playwright HTML report
+1. Open the workflow run in the **Actions** tab
+2. Scroll to **Artifacts**
+3. Download **playwright-report**
+4. Unzip it locally
+5. Open:
+   `playwright-report/index.html`
+
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes. 
 ## License
