@@ -1,8 +1,8 @@
 import { test } from '@playwright/test';
-import { LoginPage } from '../pages/LoginPage';
-import { ManagerPage } from '../pages/ManagerPage';
-import {userData } from '../../utils/testData';
-import { existingCustomer } from '../../utils/testData';
+import { LoginPage } from '../../../pages/LoginPage';
+import { ManagerPage } from '../../../pages/ManagerPage';
+import {userData } from '../../../utils/testData';
+import { existingCustomer } from '../../../utils/testData';
 
 
 

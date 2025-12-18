@@ -64,19 +64,22 @@ This will open the report in your default web browser.
 
 ## Project Structure
 ```
-/ ├── tests/                            # Test files
-    ├── e2e/                            # End-to-end test cases
-        ├── customer-execute.spec.ts
-        ├── manager-execute.spec.ts
-    ├── pages/                          # Page Object Models
-        ├── BasePage.ts
-        ├── CustomerPage.ts
-        ├── ManagerPage.ts
-├── utils/                             # TestData and utility functions
+/ ├── tests/                               # Test files
+    ├── e2e/                               # End-to-end test cases
+        ├── Q2/                            # End-to-end test cases
+            ├── manager-execute.spec.ts
+        ├── Q3/                            # End-to-end test cases
+            ├── customer-execute.spec.ts
+        
+├── pages/                                 # Page Object Models
+    ├── LoginPage.ts
+    ├── CustomerPage.ts
+    ├── ManagerPage.ts
+├── utils/                                 # TestData and utility functions
     ├── testData.ts    
-├── playwright.config.ts                # Playwright configuration file
-├── package.json                        # npm package file
-├── tsconfig.json                       # TypeScript configuration file
+├── playwright.config.ts                   # Playwright configuration file
+├── package.json                           # npm package file
+├── tsconfig.json                          # TypeScript configuration file
 ``` 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes. 
